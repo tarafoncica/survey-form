@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">freeCodecamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label>
+      <input
+        id="name"
+        required
+        type="text"
+        placeholder="Enter your name here"
+      />
+
+      <label id="email-label" for="email">Email</label>
+      <input
+        id="email"
+        required
+        type="email"
+        placeholder="enter your email here"
+      />
+
+      <label id="number-label" for="number">Number</label>
+      <input
+        id="number"
+        required
+        type="number"
+        min="1"
+        max="100"
+        placeholder="enter your number here"
+      />
+
+      <label for="dropdown"
+        >Which option best describes your current role?</label
+      >
+      <select id="dropdown" name="role">
+        <option value="student">Student</option>
+        <option value="developer">Developer</option>
+      </select>
+
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <label> <input type="radio" name="recommended" value="yes" /> Yes</label>
+      <label> <input type="radio" name="recommended" value="no" /> No</label>
+
+      <p>what do you like most about freeCodeCamp? (check all that apply)</p>
+      <label><input type="checkbox" value="html" /> HTML</label>
+      <label><input type="checkbox" value="css" /> CSS</label>
+
+      <p>Any comments or suggestions?</p>
+      <textarea
+        placeholder="Enter your comments or suggestions here..."
+      ></textarea>
+
+      <button id="submit" type="submit"></button>
+    </form>
+  </body>
+</html>
