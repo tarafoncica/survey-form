@@ -3,9 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+header {
+  background-color: #c6c6ce;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+#title {
+  text-align: center;
+}
+#description {
+  text-align: center;
+}
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #aeaed6;
   color: #333;
   line-height: 1.6;
 }
@@ -34,7 +46,7 @@ textarea {
   border-radius: 5px;
 }
 button {
-  background-color: #4caf50;
+  background-color: #515066;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -42,5 +54,9 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background-color: #45a049;
+  background-color: #e5dedf;
+}
+img:hover {
+  transform: scale(5.5);
+  transition: transform 0.5s;
 }
