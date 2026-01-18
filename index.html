@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
@@ -30,38 +30,109 @@
         placeholder="Enter your email here"
       />
 
-      <label id="number-label" for="number">Number</label>
+      <label id="age-label" for="age">Age (Optional)</label>
       <input
-        id="number"
+        id="age"
         required
         type="number"
         min="1"
         max="100"
-        placeholder="Enter your number here"
+        placeholder="Enter your age here"
       />
 
       <label for="dropdown"
         >Which option best describes your current role?</label
       >
       <select id="dropdown" name="role">
+        <option value="disabled selected">Select current role</option>
         <option value="student">Student</option>
-        <option value="developer">Developer</option>
+        <option value="Full time Job">Full time Job</option>
+        <option value="Full time Learner">Full time Learner</option>
+        <option value="Prepare not to say">Prepare not to say</option>
+        <option value="Other">Other</option>
       </select>
 
       <p>Would you recommend freeCodeCamp to a friend?</p>
-      <label> <input type="radio" name="recommended" value="yes" /> Yes</label>
-      <label> <input type="radio" name="recommended" value="no" /> No</label>
+      <label>
+        <input type="radio" name="recommended" value="Definitely" />
+        Definitely</label
+      >
+      <label>
+        <input type="radio" name="recommended" value="Maybe" /> Maybe</label
+      >
+      <label>
+        <input type="radio" name="recommended" value="Not sure" /> Not
+        sure</label
+      >
 
-      <p>What do you like most about freeCodeCamp? (check all that apply)</p>
-      <label><input type="checkbox" value="html" /> HTML</label>
-      <label><input type="checkbox" value="css" /> CSS</label>
+      <label for="dropdown">What do you like most about freeCodeCamp? </label>
+      <select id="dropdown" name="role">
+        <option value="disabled selected">Select an option</option>
+        <option value="challenges">Challenges</option>
+        <option value="Projects">Projects</option>
+        <option value="Community">Community</option>
+        <option value="Open Source">Open Source</option>
+      </select>
+
+      <p>What would you like to see improved? (check all that apply)</p>
+
+      <label>
+        <input type="checkbox" name="recommended" value="Front-end Projects" />
+        Front-end Projects</label
+      >
+      <label>
+        <input type="checkbox" name="recommended" value="Back-end Projects" />
+        Back-end Projects</label
+      >
+      <label>
+        <input type="checkbox" name="recommended" value="Back-end Projects" />
+        Back-end Projects</label
+      >
+      <label>
+        <input type="checkbox" name="recommended" value="Data Visualization" />
+        Data Visualization</label
+      >
+      <label>
+        <input type="checkbox" name="recommended" value="Challenges" />
+        Challenges</label
+      >
+      <label>
+        <input
+          type="checkbox"
+          name="recommended"
+          value="Open Source Community"
+        />
+        Open Source Community</label
+      >
+      <label>
+        <input type="checkbox" name="recommended" value="Gitter help Rooms" />
+        Gitter help Rooms</label
+      >
+      <label>
+        <input type="checkbox" name="recommended" value="Videos" />
+        Videos</label
+      >
+      <label>
+        <input type="checkbox" name="recommended" value="City Meetups" /> City
+        Meetups</label
+      >
+      <label>
+        <input type="checkbox" name="recommended" value="Wiki" /> Wiki</label
+      >
+      <label>
+        <input type="checkbox" name="recommended" value="Forum" /> Forum</label
+      >
+      <label>
+        <input type="checkbox" name="recommended" value="Additional Course" />
+        Additional Course</label
+      >
 
       <p>Any comments or suggestions?</p>
       <textarea
         placeholder="Enter your comments or suggestions here..."
       ></textarea>
 
-      <button id="submit" type="submit"></button>
+      <button type="submit" class="submit-btn">Submit</button>
     </form>
   </body>
 </html>

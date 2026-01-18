@@ -45,18 +45,19 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-button {
-  background-color: #515066;
+.submit-btn {
+  width: 100%;
+  background-color: #f86cb4;
   color: white;
-  padding: 10px 20px;
+  padding: 14px 0;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-button:hover {
-  background-color: #e5dedf;
+.submit-btn:hover {
+  background-color: #e0559c;
 }
-img:hover {
-  transform: scale(5.5);
-  transition: transform 0.5s;
+.submit-btn:active {
+  background-color: #c6407f;
 }
